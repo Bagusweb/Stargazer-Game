@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    overflow: hidden; /* Evita el desplazamiento de la página */
+}
+
+#startMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    z-index: 999; /* Encima de todo */
+}
+
+#menuTitle {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#startMenu button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#game {
+    display: none; /* Ocultar el juego al principio */
+    position: relative;
+    width: 100vw; /* Usa toda la vista de la ventana */
+    height: 100vh; /* Usa toda la vista de la ventana */
+    background-color: #000;
+    border-bottom: 2px solid #fff; /* Línea blanca en la parte inferior */
+}
+
+#player {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#stars {
+    position: absolute;
+}
+
+.star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffff00;
+    border-radius: 50%;
+}
+
+#obstacles {
+    position: absolute;
+}
+
+.obstacle {
+    position: absolute;
+    background-color: #ff0000;
+}
+
+#bottomLine {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+}
+
+#lives {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+}
+                                         
+            
